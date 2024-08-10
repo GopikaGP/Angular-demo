@@ -1,0 +1,20 @@
+<!-- <h4>employee name: {{empName}}</h4>
+
+<img [src]="empImg" alt="" width="" height="">  -->
+
+<div class="row  d-flex justify-content-center align-items-center mb-4">
+    <div class="col-md-4 shadow p-5 border">
+        <div class="col-md-4">
+            <h4 class="text-center">employeeName:{{empName}}</h4>
+            <img [src]="empImg" alt="no" height="150px" width="150px">
+            <input type="text" class="form-control w-100 mt-3 " placeholder="employee" (change)="getDes($event)">
+        
+           <div class="d-flex w-100 mt-3">
+            <input  type="text" class="form-control w-100" placeholder="empsalary">
+           </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    
+</div>
+<app-register></app-register>

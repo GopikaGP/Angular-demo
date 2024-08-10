@@ -1,0 +1,158 @@
+ANGULAR
+       -------
+
+       -angular is a popular open source web application framework
+       -developed and maintained by google(react- facebook)
+       -language used typeScript(react - jsx)
+       -single page language - index.html
+       -latest version 17 but 16 is used
+       -real dom
+
+
+       Basic Commands
+       --------------
+
+       Angular cli(Command line Intrepreter) - it helps to simplify the process of creating , building and deploying angular applications
+
+       version  -> ng v
+       install  -> npm install -g @angular/cli@16.1.7
+       create -> ng new projectname
+       run -> ng serve --open   or    ng s -o
+
+
+
+       TypeScript
+       ----------
+
+       - super set of Javascript
+       - statically  typed
+       -typeScript compiler - ts to js conversion - transpiling
+                           - babel library perform this conversion
+
+
+
+       Files
+       -----
+
+     1)README.md - documentation
+     2)package.json - npm configuration (how to behave)
+               - dependencies - installed libraries name
+               - scripts - "react-scripts start" = npm start
+     3)package-lock.json - hold versions of installed libraries
+     4).gitignore - files that have to be ignored while pushing the project to gitignore
+     5).editConfig -vs code configuration(behaviour)
+     6)ts file - ts configuration
+     7)angular.json - angular configuration
+     8)node_modules - copy of the installed libraries
+     9)src
+          - index.html - only file that run in the frontend
+
+
+          react pathname in App.jsx -function name
+          component-jsx,css
+          path-App.jsx
+
+          angular - selector
+          component - css,html,spec.ts,ts
+                  .html-content
+                  .css-styling
+                  .ts-logic
+                  .spec.ts- testing
+          path-app-routing-module.ts 
+
+          @ represents decoretors ,they are used for adding meta data (data inside another data) 
+
+          -declarations - components are added to this key
+          -import - modules are added to this key 
+          -bootstrap - 
+          control from main.ts    
+
+
+
+    Components
+    ---------- 
+    -basic unit of ui  consisting of html css spec and ts files
+    -can be created using the command - ng g c componentname
+
+
+    Data Binding
+    ------------
+    -method of data sharing in angular
+    -there are different methods of data sharing
+    1)one way data Binding
+    
+      1)ts to html 
+          -string interpolation - applied using{{}}
+          -property binding - applied using []
+
+      2)html to ts
+          -using $events
+          -data sharing using events
+          -template variables
+
+    2)two way data Binding
+          -template driven form - formModel - ngModel
+                - validation implemented in ts
+
+                1.import formsmodule at module.ts file
+                2.create properties to store data
+                3.use ngModel to connect property and the input box
+          -model driven 
+                - validation implemented in ts - reactiveformModule
+
+    DEPENDENCY INJECTION
+      - data sharing between componnets and a predefinid class/class
+    
+    -syntax
+    ---------
+    Construtor(access specifier property:dependent class){}
+
+    eg : class a {
+        construtor(public propertyA : ClassB){}
+    }
+
+    access specifiers - private
+                      - public
+                      - protector - here we can give key 
+    
+    functional component  - INJECT
+    ------------------------------
+    method - Inject 
+    syntax
+    ------
+    const variablename = inject(dependencies)
+
+ROUTING
+-------
+setting up path in an application
+ step 1 : enable routing on your application inorder to to create routing .module.ts
+ step2 : set path in roting .module.ts
+   -empty string represent baseurl
+step 3 : place routes - outlet tag in the app - compnents .html .file
+
+
+SERVICES
+--------
+data share between components
+  Commands
+  --------
+  ng g s servicename
+  ng s g folder/servicename
+
+DIRECTIVES
+----------
+
+- used for providing additinal behaviours to an html documents
+- there are three types of directvies
+   1) component directvies
+      create components and place content then load to html components
+   2) structural directvies
+        - condional rendewring
+        - *ngif (condition satify chythal mathram load avum)
+        - *ngfor (multiply chyth display kanikam oru condition satisfy avumbol)
+   3) attribute directives
+       to provide style to an element
+       eg: ngClass
+
+
+    
